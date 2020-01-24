@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.turntabl.employementprofilingsystem.ProjectServiceApplicationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-01-24T01:44:41" hostname="sammy" time="0.281">
+  <properties/>
+  <testcase name="getAllEmployeeProfile()" classname="io.turntabl.employementprofilingsystem.ProjectServiceApplicationTests" time="0.277"/>
+  <testcase name="addEmployee()" classname="io.turntabl.employementprofilingsystem.ProjectServiceApplicationTests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
