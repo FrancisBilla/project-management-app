@@ -32,8 +32,8 @@ public class LoggedController implements LoggedDAO {
     public Map<String, Object> addLoggedProject(@RequestBody LoggedProjectTO loggedProjectTO) {
         Map<String, Object> response = new HashMap<>();
         try{
-            this.jdbcTemplate.update("insert into LoggedProject (project_id, employee_id, project_hours, project_date) values (?, ?, ?, ?)",
-                    loggedProjectTO.getProject_id(), loggedProjectTO.getEmployee_id(), loggedProjectTO.getProject_hours(), loggedProjectTO.getProject_date());
+            this.jdbcTemplate.update("insert into LoggedProject (project_id, employee_id, project_hours, project_date, employee_firstname, employee_lastname, employee_email) values (?, ?, ?, ?, ?, ?, ?)",
+                    loggedProjectTO.getProject_id(), loggedProjectTO.getEmployee_id(), loggedProjectTO.getProject_hours(), loggedProjectTO.getProject_date(), loggedProjectTO.getEmployee_firstname(), loggedProjectTO.getEmployee_lastname(), loggedProjectTO.getEmployee_email());
             response.put("code", "00");
             response.put("msg", "Project logged successfully");
         }catch(Exception e){
