@@ -9,9 +9,6 @@ public class LoggedProjectTO {
     private Integer project_hours;
     private java.sql.Date project_date;
     private Integer employee_id;
-    private String employee_firstname;
-    private String employee_lastname;
-    private String employee_email;
 
     public LoggedProjectTO(){
 
@@ -49,27 +46,4 @@ public class LoggedProjectTO {
         this.employee_id = employee_id;
     }
 
-    public String getEmployee_firstname() {
-        return employee_firstname;
-    }
-
-    public void setEmployee_firstname(String employee_firstname) {
-        this.employee_firstname = employee_firstname;
-    }
-
-    public String getEmployee_lastname() {
-        return employee_lastname;
-    }
-
-    public void setEmployee_lastname(String employee_lastname) {
-        this.employee_lastname = employee_lastname;
-    }
-
-    public String getEmployee_email() {
-        return employee_email;
-    }
-
-    public void setEmployee_email(String employee_email) {
-        this.employee_email = employee_email;
-    }
 }
